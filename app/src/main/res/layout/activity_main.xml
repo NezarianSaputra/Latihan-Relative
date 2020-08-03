@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lblNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nezarian Saputra"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_margin="40dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/txtNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblNama"
+        android:text="Nama"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"/>
+
+    <EditText
+        android:id="@+id/hintNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNama"
+        android:hint="Nama"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"/>
+
+    <TextView
+        android:id="@+id/txtAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hintNama"
+        android:text="Alamat"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:paddingTop="10dp"/>
+
+    <EditText
+        android:id="@+id/hintAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAlamat"
+        android:hint="Alamat"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"/>
+
+    <TextView
+        android:id="@+id/txtKampus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hintAlamat"
+        android:text="Kampus"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:paddingTop="10dp"/>
+
+    <EditText
+        android:id="@+id/hintKampus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtKampus"
+        android:hint="Kampus"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"/>
+
+    <ImageView
+        android:id="@+id/gmbrSatu"
+        android:src="@drawable/gmbarsaya"
+        android:layout_width="115dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/hintKampus"
+        android:layout_toLeftOf="@id/gmbrDua"
+        android:layout_margin="10dp"/>
+
+    <ImageView
+        android:id="@+id/gmbrDua"
+        android:src="@drawable/gmbarsaya"
+        android:layout_width="115dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/hintKampus"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"/>
+
+    <ImageView
+        android:id="@+id/gmbrTiga"
+        android:src="@drawable/gmbarsaya"
+        android:layout_width="115dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/hintKampus"
+        android:layout_toRightOf="@id/gmbrDua"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gmbrDua"
+        android:layout_marginLeft="10dp"
+        android:text="KEMBALI"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gmbrDua"
+        android:layout_toRightOf="@id/btnKembali"
+        android:text="NEXT"/>
+
+
+</RelativeLayout>
